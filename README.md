@@ -25,6 +25,22 @@ Also see issue in pandoc: https://github.com/jgm/pandoc/issues/1793.
 
 `docker run --rm -it -v "$(pwd):/pandoc" geometalab/pandoc bash -c "pandoc -t html5 README.md | wkhtmltopdf - README.pdf"`
 
-### getting inside the conatiner
+### getting inside the container
 
 `docker run --rm -it -v "$(pwd):/pandoc" --entrypoint="/bin/bash" geometalab/pandoc`
+
+## Development
+
+### Prerequisites
+
+Python3 with pytest installed.
+
+### Testing
+
+`pytest`
+
+### Building and pushing
+
+This uses the pytest above to verify the image is working.
+
+`./build_and_push.sh`
