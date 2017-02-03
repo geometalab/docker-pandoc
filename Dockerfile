@@ -12,7 +12,7 @@ RUN apt-get clean \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
-RUN wget -O pandoc.deb https://github.com/jgm/pandoc/releases/download/1.18/pandoc-1.18-1-amd64.deb
+RUN wget -O pandoc.deb https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
 RUN dpkg --install pandoc.deb
 
 WORKDIR /wkhtmltopdf
