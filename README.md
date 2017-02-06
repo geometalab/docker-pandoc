@@ -41,6 +41,6 @@ Python3 with pytest installed.
 
 ### Building and pushing
 
-This uses the pytest above to verify the image is working.
+To verify the image is working, this uses pytest.
 
 `./build_and_push.sh`
