@@ -12,6 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
     wget \
     tar \
     xz-utils \
+    make \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
